@@ -11,16 +11,39 @@ Installation
 
 If you are on Archlinux, use this AUR package : [msi-perkeyrgb](https://aur.archlinux.org/packages/msi-perkeyrgb/) (not up-to-date with the Git version yet)
 
-For Ubuntu or others :
+For Debian or others :
 
 ```
-git clone https://github.com/Askannz/msi-perkeyrgb
+git clone https://github.com/Deathle55/msi-perkeyrgb
 cd msi-perkeyrgb/
 sudo python3 setup.py install
 sudo cp 99-msi-rgb.rules /etc/udev/rules.d/
+sudo udevadm control --reload-rules
 ```
+pre-sets:
+msi-perkeyrgb -p default
+msi-perkeyrgb -p aqua
+msi-perkeyrgb --model GS65 -p plain
 
-After installation, you must reboot your computer (necessary for the udev rule to take effect, if you don't you will run into permission problems)
+colors.msi:
+all steady ffffff
+arrows steady ffff00
+fn steady ffc800
+
+msi-perkeyrgb -c colors.msi
+how to turn it off
+msi-perkeyrgb -d
+
+Simple usage
+Steady color :
+msi-perkeyrgb --model <MSI model> -s <COLOR>
+
+Built-in preset (see --list-presets for available options) :
+msi-perkeyrgb --model <MSI model> -p <preset>
+
+Advanced usage
+Set from configuration file :
+msi-perkeyrgb --model <MSI model> -c <path to your configuration file>
 
 Features
 ----------
