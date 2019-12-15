@@ -26,13 +26,13 @@ msi-perkeyrgb -p default
 msi-perkeyrgb -p aqua
 msi-perkeyrgb --model GS65 -p plain
 ```
-colors.msi:
+backlight.msi:
 ```
 all steady ffffff
 arrows steady ffff00
 fn steady ffc800
 
-msi-perkeyrgb -c colors.msi
+msi-perkeyrgb -c backlight.msi
 how to turn it off
 msi-perkeyrgb -d
 ```
