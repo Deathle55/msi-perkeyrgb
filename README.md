@@ -21,11 +21,13 @@ sudo cp 99-msi-rgb.rules /etc/udev/rules.d/
 sudo udevadm control --reload-rules
 ```
 pre-sets:
+```
 msi-perkeyrgb -p default
 msi-perkeyrgb -p aqua
 msi-perkeyrgb --model GS65 -p plain
-
+```
 colors.msi:
+```
 all steady ffffff
 arrows steady ffff00
 fn steady ffc800
@@ -33,17 +35,21 @@ fn steady ffc800
 msi-perkeyrgb -c colors.msi
 how to turn it off
 msi-perkeyrgb -d
-
+```
 Simple usage
-Steady color :
+Steady color:
+```
 msi-perkeyrgb --model <MSI model> -s <COLOR>
-
-Built-in preset (see --list-presets for available options) :
+```
+Built-in preset (see --list-presets for available options):
+```
 msi-perkeyrgb --model <MSI model> -p <preset>
-
+```
 Advanced usage
-Set from configuration file :
+Set from configuration file:
+```
 msi-perkeyrgb --model <MSI model> -c <path to your configuration file>
+```
 
 Features
 ----------
