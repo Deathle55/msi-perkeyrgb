@@ -10,7 +10,7 @@ from .hidapi_wrapping import HIDLibraryError, HIDNotFoundError, HIDOpenError
 
 VERSION = "2.1"
 DEFAULT_ID = "1038:1122"
-DEFAULT_MODEL = "GE63"  # Default laptop model if nothing specified
+DEFAULT_MODEL = "GP75"  # Default laptop model if nothing specified
 
 
 def main():
