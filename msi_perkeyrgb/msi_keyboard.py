@@ -23,10 +23,7 @@ class MSI_Keyboard:
 
             if msi_model in msi_models:
 
-                presets_path = os.path.join(os.path.dirname(__file__),
-                                            'protocol_data',
-                                            'presets',
-                                            filename)
+                presets_path = os.path.join(os.path.dirname(__file__), 'protocol_data', 'presets', filename)
                 with open(presets_path) as f:
                     msi_presets = json.load(f)
 
